@@ -4,13 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/activity_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/activity_test.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_dashboard.xml" value="0.2296195652173913" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_home.xml" value="0.2296195652173913" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_notifications.xml" value="0.2296195652173913" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_photos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_posts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/fragment_users.xml" value="0.11145833333333334" />
-        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/user_item.xml" value="0.10729166666666666" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/photo_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/post_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/layout/user_item.xml" value="0.264" />
         <entry key="..\:/Users/yusuf.okur/AndroidStudioProjects/InstaPark/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

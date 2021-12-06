@@ -1,10 +1,14 @@
 package com.veripark.instapark.data.repository
 
+import com.veripark.instapark.data.model.photos.PhotoModel
+import com.veripark.instapark.data.model.posts.PostModel
 import com.veripark.instapark.util.Resource
 import com.veripark.instapark.data.model.users.UsersModel
 import kotlinx.coroutines.flow.Flow
 
 interface InstaParkRepository {
-    suspend fun getUser(): Flow<Resource<UsersModel>>
+    suspend fun getUsers(): Flow<Resource<UsersModel>>
+    suspend fun getPosts(): Flow<Resource<PostModel>>
+    suspend fun getPhotos(): Flow<Resource<PhotoModel>>
 
 }

@@ -1,6 +1,5 @@
 package com.veripark.instapark.di
 
-import com.veripark.instapark.util.Constants.BASE_URL
 import com.veripark.instapark.data.remote.InstaParkApiService
 import dagger.Module
 import dagger.Provides
@@ -13,9 +12,11 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object InstaParkApiModule {
+    private const val BASE_URL = "http://jsonplaceholder.typicode.com/"
 
 /*
     https://jsonplaceholder.typicode.com/users
+    https://jsonplaceholder.typicode.com/posts
 */
     @Provides
     @Singleton
@@ -31,6 +32,4 @@ object InstaParkApiModule {
     @Singleton
     fun createApi(retrofit: Retrofit): InstaParkApiService =
         retrofit.create(InstaParkApiService::class.java)
-
-
 }

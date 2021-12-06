@@ -23,7 +23,7 @@ class UsersViewModel @Inject constructor(private val instaParkRepository: InstaP
 
     fun getUsers(){
         CoroutineScope(Dispatchers.IO).launch {
-            instaParkRepository.getUser()
+            instaParkRepository.getUsers()
                 .onStart { _users.postValue(Resource.Loading()) }
                 .catch { msg-> _users.postValue(Resource.Error(Throwable(msg)))}
                 .collect { _users.postValue(it)}
