@@ -1,7 +1,6 @@
 package com.veripark.instapark.data.repository
 
-import com.resurrection.imkb.util.Resource
-import com.resurrection.imkb.util.getResourceByDatabaseRequest
+import com.veripark.instapark.util.Resource
 import com.resurrection.imkb.util.getResourceByNetworkRequest
 import com.veripark.instapark.data.model.users.UsersModel
 import com.veripark.instapark.data.remote.InstaParkApiService
@@ -13,13 +12,11 @@ class InstaParkRepositoryImpl @Inject constructor(private val instaParkApiServic
     : InstaParkRepository {
 
 
-    override suspend fun getUser(): kotlinx.coroutines.flow.Flow<Resource<UsersModel>> = flow {
+    override suspend fun getUser(): Flow<Resource<UsersModel>> = flow {
             emit(getResourceByNetworkRequest { instaParkApiService.getUser() })
         }
 
-    override suspend fun getxxx(): Flow<Resource<*>> = flow {
-        emit(getResourceByNetworkRequest { instaParkApiService.getxxxx() })
-    }
+
 
 
 }

@@ -1,4 +1,4 @@
-package com.resurrection.imkb.util
+package com.veripark.instapark.util
 
 enum class Status {
     SUCCESS,

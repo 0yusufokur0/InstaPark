@@ -1,5 +1,6 @@
 package com.resurrection.imkb.util
 
+import com.veripark.instapark.util.Resource
 import retrofit2.Response
 
 suspend fun <T> getResourceByNetworkRequest(request: suspend () -> Response<T>): Resource<T> {

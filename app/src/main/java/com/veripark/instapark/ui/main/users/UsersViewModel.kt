@@ -3,6 +3,8 @@ package com.veripark.instapark.ui.main.users
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.veripark.instapark.util.Resource
+import com.veripark.instapark.data.model.users.UsersModel
 import com.veripark.instapark.data.repository.InstaParkRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -14,22 +16,17 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-public class UsersViewModel @Inject constructor(private val instaParkRepository: InstaParkRepository) : ViewModel() {
+class UsersViewModel @Inject constructor(private val instaParkRepository: InstaParkRepository) : ViewModel() {
 
-    fun printUsers(){
+    private val _users = MutableLiveData<Resource<UsersModel>>()
+    val users : LiveData<Resource<UsersModel>> = _users
+
+    fun getUsers(){
         CoroutineScope(Dispatchers.IO).launch {
-            instaParkRepository.getxxx()
-                .onStart {
-                    println("loadinggg")
-                }
-                .catch {
-                    println("errorr")
-                }
-                .collect {
-                    println(it.data)
-                    println(it.data)
-                }
+            instaParkRepository.getUser()
+                .onStart { _users.postValue(Resource.Loading()) }
+                .catch { msg-> _users.postValue(Resource.Error(Throwable(msg)))}
+                .collect { _users.postValue(it)}
         }
-
     }
 }
