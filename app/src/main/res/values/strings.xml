@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InstaPark</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="users">Users</string>
+    <string name="posts">Posts</string>
+    <string name="photos">Photos</string>
+</resources>
