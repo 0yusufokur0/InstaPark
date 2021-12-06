@@ -1,4 +1,4 @@
-package com.veripark.instapark.ui.photos
+package com.veripark.instapark.ui.main.photos
 
 import android.os.Bundle
 import com.veripark.instapark.R
@@ -9,6 +9,7 @@ class PhotosFragment : BaseFragment<FragmentPostsBinding, PhotosViewModel>
     (R.layout.fragment_photos,PhotosViewModel::class.java) {
 
     override fun init(savedInstanceState: Bundle?) {
+        println("photos")
 
     }
 }

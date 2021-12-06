@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_users">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.veripark.instapark.ui.posts.PostsFragment"
+        android:id="@+id/navigation_users"
+        android:name="com.veripark.instapark.ui.main.users.UsersFragment"
         android:label="@string/users"
-        tools:layout="@layout/fragment_posts" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.veripark.instapark.ui.users.UsersFragment"
-        android:label="@string/posts"
         tools:layout="@layout/fragment_users" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.veripark.instapark.ui.photos.PhotosFragment"
+        android:id="@+id/navigation_posts"
+        android:name="com.veripark.instapark.ui.main.posts.PostsFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_posts" />
+
+    <fragment
+        android:id="@+id/navigation_photos"
+        android:name="com.veripark.instapark.ui.main.photos.PhotosFragment"
         android:label="@string/photos"
         tools:layout="@layout/fragment_photos" />
 </navigation>

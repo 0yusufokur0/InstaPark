@@ -1,4 +1,4 @@
-package com.veripark.instapark.ui.posts
+package com.veripark.instapark.ui.main.posts
 
 import android.os.Bundle
 import com.veripark.instapark.R
@@ -9,6 +9,7 @@ class PostsFragment :BaseFragment<FragmentPostsBinding,PostsViewModel>
     (R.layout.fragment_posts,PostsViewModel::class.java) {
 
     override fun init(savedInstanceState: Bundle?) {
+        println("posts")
 
     }
 }

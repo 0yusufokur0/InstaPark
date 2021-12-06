@@ -1,4 +1,4 @@
-package com.veripark.instapark.ui.photos
+package com.veripark.instapark.ui.main.photos
 
 import androidx.lifecycle.ViewModel
 
