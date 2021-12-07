@@ -1,5 +1,9 @@
 package com.veripark.instapark.data.model.users
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+import java.io.Serializable
+
 data class UsersModelItem(
     val address: Address,
     val company: Company,

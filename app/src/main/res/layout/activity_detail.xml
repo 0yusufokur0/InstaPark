@@ -9,45 +9,56 @@
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
+    android:id="@+id/container"
     android:layout_height="match_parent"
     tools:context=".ui.main.detail.DetailActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    >
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@{userModelItem.name}"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:text="@{userModelItem.email}"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:text="@{userModelItem.address.city + userModelItem.address.street}"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:text="@{userModelItem.company.name}"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:text="@{userModelItem.company.bs}"/>
-</LinearLayout>
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{userModelItem.name}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{userModelItem.email}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{userModelItem.address.city + userModelItem.address.street}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{userModelItem.company.name}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{userModelItem.company.bs}"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
